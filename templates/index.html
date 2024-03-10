@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/static/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="revenue">
                   <p class="revenue-value" style="color: #bbbbbb">
-                    Graph Placeholder
+                    <canvas id="demandChart" width="250" height="100"></canvas>
                   </p>
                 </div>
               </div>
@@ -89,7 +90,7 @@
       </div>
     </main>
 
-    <footer>
+    <!-- <footer>
       <p>
         &copy; 2022 Supermarket Supply Chain Management. All rights reserved.
       </p>
@@ -99,6 +100,7 @@
         <li><img src="/static/icons/instagram.svg" alt="" /></li>
         <li><img src="/static/icons/github.svg" alt="" /></li>
       </ul>
-    </footer>
+    </footer> -->
+    <script src="/static/js/index.js"></script>
   </body>
 </html>
