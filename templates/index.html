@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supply Chain Management Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-class">
+        <h1>Supply Chain Management Dashboard</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Inventory</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <h2>Menu</h2>
+          <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+            <a class="nav-link" href="#" tabindex="-1">Demand Forecast</a>
+          </nav>
+        </div>
+        <div class="main-page-container">
+        <div class="content">
+          <div class="box">
+            <div class="box-head">
+              <img
+                class="box-icons"
+                src="/static/icons/stack.svg"
+                alt="Stocks Icon"
+              />
+              <h3>Current Stocks</h3>
+            </div>
+            <div class="stocks">
+              <p class="stock-value" style="color: #bbbbbb">
+                Placeholder Value
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-head">
+                <img
+                  class="box-icons"
+                  src="/static/icons/coin.svg"
+                  alt="Stocks Icon"
+                />
+                <h3>Revenue</h3>
+              </div>
+            <div class="revenue">
+              <p class="revenue-value" style="color: #bbbbbb">
+                Placeholder Value
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="analytics-box">
+            <div class="box-head">
+                <img
+                  class="box-icons"
+                  src="/static/icons/bar-chart-fill.svg"
+                  alt="Stocks Icon"
+                />
+                <h3>Analytics</h3>
+                </div>
+                <div class="revenue">
+                  <p class="revenue-value" style="color: #bbbbbb">
+                    Graph Placeholder
+                  </p>
+                </div>
+              </div>
+        </div>
+    </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2022 Supermarket Supply Chain Management. All rights reserved.
+      </p>
+      <p>Follow us on social media:</p>
+      <ul>
+        <li><img src="/static/icons/facebook.svg" alt="" /></li>
+        <li><img src="/static/icons/instagram.svg" alt="" /></li>
+        <li><img src="/static/icons/github.svg" alt="" /></li>
+      </ul>
+    </footer>
+  </body>
+</html>
