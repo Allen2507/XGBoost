@@ -33,11 +33,9 @@ To install the project, follow these steps:
 
 4. Start the application:
 
-    Run the application in your local code editor with the correct environment.
+    Run the application in your local code editor with a suitable environment of your choice.
 
 Now you should have the project installed and running on your local machine.
-
-## License
 
 ## License
 
