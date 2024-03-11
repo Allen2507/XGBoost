@@ -1,7 +1,7 @@
 /* Add your CSS styles here */
 header {
-  background-color: #56c9ff;
-  color: #fff;
+  background-color: #8FB8DE ;
+  color: #000;
   padding: 20px;
   text-align: center;
 }
@@ -30,7 +30,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #6A605C;
   text-decoration: none;
 }
 
@@ -41,11 +41,11 @@ main {
 
 /* Footer styles */
 footer {
-  background-color: #333;
+  background-color: #8FB8DE;
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -89,12 +89,11 @@ footer ul li a {
 
 .sidebar {
   height: 100%;
-  width: 250px; /* Adjust width as needed */
-  /* position: fixed; */
+  width: 250px;
   top: 78px;
-  position: fixed;
+  position: absolute;
   left: 0;
-  background-color: #003c77; /* Dark background color */
+  background-color: #CDF7F6; /* Dark background color */
   padding-top: 20px;
   padding-left: 10px;
 }
@@ -105,7 +104,7 @@ footer ul li a {
 }
 
 .sidebar h2 {
-  color: #fff; /* White text color */
+  color: #000;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -114,11 +113,11 @@ footer ul li a {
   padding: 10px 15px;
   text-decoration: none;
   font-size: 18px;
-  color: #fff; /* White text color */
+  color: #000; 
 }
 
 .sidebar a:hover {
-  background-color: #b8b8b8; /* Darker background color on hover */
+  background-color: #9EE493;
 }
 
 .content {
@@ -197,4 +196,14 @@ footer ul li a {
 #demandChart{
     height: 250px;
     width: 250px;
+}
+
+.result-values{
+  color: #000000 !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label-head{
+  font-weight: bold;
 }

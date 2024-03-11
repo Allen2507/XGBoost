@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/static/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
-  <body>
+  <body onload="runOnLoad()">
     <header>
       <div class="header-class">
         <h1>Supply Chain Management Dashboard</h1>
@@ -39,6 +39,12 @@
         </div>
         <div class="main-page-container">
         <div class="content">
+          <label for="dropdown" class="label-head">Select ID:</label>
+                <select id="dropdown" onchange="updateContainer()">
+                  <option value="0" selected style="color: #bbb;">Select...</option>
+                  <option value="23">SKU3</option>
+                  <option value="93">SKU7</option>
+                </select>
           <div class="box">
             <div class="box-head">
               <img
@@ -49,9 +55,9 @@
               <h3>Current Stocks</h3>
             </div>
             <div class="stocks">
-              <p class="stock-value" style="color: #bbbbbb">
-                Placeholder Value
-              </p>
+              <div class="stock-value" style="color: #000000"id="result-container">
+                 <span class="result-values" id="selected-value"> </span>  units
+              </div>
             </div>
           </div>
           <div class="box">
@@ -64,8 +70,8 @@
                 <h3>Revenue</h3>
               </div>
             <div class="revenue">
-              <p class="revenue-value" style="color: #bbbbbb">
-                Placeholder Value
+              <p class="revenue-value" style="color: #000000; font: 1.5rem sans-serif;">
+                ₹  <span class="result-values" id="revenue-value-holder"></span>
               </p>
             </div>
           </div>
@@ -81,7 +87,7 @@
                 </div>
                 <div class="revenue">
                   <p class="revenue-value" style="color: #bbbbbb">
-                    <canvas id="demandChart" width="250" height="100"></canvas>
+                    <canvas id="demandChart" width="250" height="150"></canvas>
                   </p>
                 </div>
               </div>
@@ -90,7 +96,7 @@
       </div>
     </main>
 
-    <!-- <footer>
+    <footer>
       <p>
         &copy; 2022 Supermarket Supply Chain Management. All rights reserved.
       </p>
@@ -100,7 +106,7 @@
         <li><img src="/static/icons/instagram.svg" alt="" /></li>
         <li><img src="/static/icons/github.svg" alt="" /></li>
       </ul>
-    </footer> -->
+    </footer>
     <script src="/static/js/index.js"></script>
   </body>
 </html>
