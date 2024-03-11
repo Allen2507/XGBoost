@@ -1,6 +1,5 @@
-/* Add your CSS styles here */
 header {
-  background-color: #8FB8DE ;
+  background-color: #8fb8de;
   color: #000;
   padding: 20px;
   text-align: center;
@@ -30,22 +29,20 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #6A605C;
+  color: #6a605c;
   text-decoration: none;
 }
 
-/* Main content styles */
 main {
   padding: 20px;
 }
 
-/* Footer styles */
 footer {
-  background-color: #8FB8DE;
+  background-color: #8fb8de;
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -85,7 +82,6 @@ footer ul li a {
   margin: 0;
   padding: 0;
 }
-/* Sidebar CSS */
 
 .sidebar {
   height: 100%;
@@ -93,13 +89,13 @@ footer ul li a {
   top: 78px;
   position: absolute;
   left: 0;
-  background-color: #CDF7F6; /* Dark background color */
+  background-color: #cdf7f6;
   padding-top: 20px;
   padding-left: 10px;
 }
 
 .sidebar ul {
-  list-style: none; /* Remove default list styles */
+  list-style: none;
   padding: 0;
 }
 
@@ -113,11 +109,11 @@ footer ul li a {
   padding: 10px 15px;
   text-decoration: none;
   font-size: 18px;
-  color: #000; 
+  color: #000;
 }
 
 .sidebar a:hover {
-  background-color: #9EE493;
+  background-color: #9ee493;
 }
 
 .content {
@@ -129,81 +125,81 @@ footer ul li a {
   flex-basis: 30%;
 }
 
-.box-container{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    height: auto;
-    width: 250px;
-    gap: 2rem;
+.box-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: auto;
+  width: 250px;
+  gap: 2rem;
 }
-.box{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 10px;
-    border: #bbbbbb solid 2px;
-    height: 200px;
-}
-
-#section1{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  border: #bbbbbb solid 2px;
+  height: 200px;
 }
 
-.analytics-box{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 10px;
-    width: 870px;
-    border: #bbb solid 1px;
+#section1 {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
-.box-icons{
-    display: flex;
-    width: 24px;
-    height: 24px;
-    align-items: center;
-    justify-content: center;
+.analytics-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  width: 870px;
+  border: #bbb solid 1px;
 }
 
-.box-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 10px;
-    align-items: center;
+.box-icons {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
-.main-page-container{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    overflow: hidden;
-    height: auto;
-    width: 100%;
-    padding: 1rem;
+.box-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
 }
 
-#demandChart{
-    height: 250px;
-    width: 250px;
+.main-page-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  padding: 1rem;
 }
 
-.result-values{
+#demandChart {
+  height: 250px;
+  width: 250px;
+}
+
+.result-values {
   color: #000000 !important;
   font-size: 24px;
   font-weight: bold;
 }
 
-.label-head{
+.label-head {
   font-weight: bold;
 }

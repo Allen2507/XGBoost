@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Data Form</title>
+    <link rel="stylesheet" href="/static/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Data</h1>
+        <form action="/predict" method="post">
+            <label for="sku">SKU:</label>
+            <input type="number" name="sku" required>
+
+            <label for="product-type">Product Type:</label>
+            <select name="productType" id="p-type" required>
+                <option value="none" disabled selected style="color:#777">Select...</option>
+                <option value="0">Cosmetics</option>
+                <option value="1">Haircare</option>
+                <option value="2">Skincare</option>
+            </select>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" min="0" required>
+
+            <label for="availability">Availability:</label>
+            <input type="text" id="availability" name="availability" required>
+
+            <label for="costs">Costs:</label>
+            <input type="number" id="costs" name="costs" min="0" required>
+
+            <label for="customer-demographics">Customer Demographics:</label>
+            <select id="dropdown" required>
+                <option value="none" disabled selected style="color: #777777;">Select...</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+                <option value="2">Non-Binary</option>
+                <option value="3">Unknown</option>
+            </select>
+
+            <label for="number-of-products-sold">Number of Products Sold:</label>
+            <input type="number" id="number-of-products-sold" name="number-of-products-sold" min="0" required>
+
+            <label for="order-quantities">Order Quantities:</label>
+            <input type="number" id="order-quantities" name="order-quantities" min="0" required>
+
+            <label for="defect-rates">Defect Rates:</label>
+            <input type="number" id="defect-rates" step="any" name="defect-rates" min="0" required>
+
+            <label for="inspection-results">Inspection Results:</label>
+            <select name="inspection" id="inspection-results-values"required>
+                <option value="none" disabled selected style="color: #777;">Select...</option>
+                <option value="1">Pass</option>
+                <option value="0">Fail</option>
+                <option value="2">Pending</option>
+            </select>
+
+            <label for="lead-time">Lead Time:</label>
+            <input type="number" id="lead-time" name="lead-time" min="0" required>
+
+            <label for="lead-times">Lead Times:</label>
+            <input type="number" id="lead-times" name="lead-times" min="0" required>
+
+            <label for="manufacturing-lead-time">Manufacturing Lead Time:</label>
+            <input type="number" id="manufacturing-lead-time" name="manufacturing-lead-time" min="0" required>
+
+            <label for="production-volumes">Production Volumes:</label>
+            <input type="number" id="production-volumes" name="production-volumes" min="0" required>
+
+            <button type="submit" value="predict">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
