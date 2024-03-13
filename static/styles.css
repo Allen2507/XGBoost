@@ -1,5 +1,5 @@
 header {
-  background-color: #8fb8de;
+  background-color: #4ca8ff;
   color: #000;
   padding: 20px;
   text-align: center;
@@ -29,7 +29,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #6a605c;
+  color: #333333;
   text-decoration: none;
 }
 
