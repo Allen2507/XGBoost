@@ -8,19 +8,19 @@
     var forecastedData2 = [50, 95, 90, 120, 93, 97];
     var ctx = document.getElementById('demandChart').getContext('2d');
     var demandChart = new Chart(ctx, {
-        type: 'line', // Line chart type
+        type: 'line', 
         data: {
-            labels: labels, // X-axis labels
+            labels: labels, 
             datasets: [{
                 label: 'Actual Demand',
-                data: actualData0, // Actual demand data
-                borderColor: 'blue', // Line color
+                data: actualData0, 
+                borderColor: 'blue', 
                 borderWidth: 1
 
             }, {
                 label: 'Forecasted Demand',
-                data: forecastedData0, // Forecasted demand data
-                borderColor: 'red', // Line color
+                data: forecastedData0, 
+                borderColor: 'red', 
                 borderWidth: 1
             }]
         },

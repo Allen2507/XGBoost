@@ -1,0 +1,35 @@
+header {
+    background-color: #75bcff;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+  }
+  .header-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row !important;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+    cursor: default;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  header nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+  }
