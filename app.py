@@ -14,10 +14,7 @@ def index():
 @app.route('/predict', methods=['POST'])
 def result():
     
-        sku = str(request.form['SKU'])
-        label_encoder = LabelEncoder()
-        encoded_sku = label_encoder.transform([sku])
-        
+        sku = int(request.form['SKU'])
         availability = int(request.form['Availability'])
         stock_levels = int(request.form['Stock levels'])
         costs = float(request.form['Costs'])
@@ -33,19 +30,23 @@ def result():
         product_type = int(request.form['Product type'])
         production_volume = int(request.form['Production volumes'])
 
-        X= np.array([[encoded_sku, availability, stock_levels, costs, customer_demographics, 
+        X= np.array([[sku, availability, stock_levels, costs, customer_demographics, 
                       defect_rates, inspection_results, lead_time, lead_times, 
                       manufacturing_lead_time, count_of_products_sold, order_quantity, 
                       price, product_type, production_volume]])
 
+        demand_percentage = "{:.2f}".format((order_quantity/(order_quantity + count_of_products_sold)) * 100)
         
         y_prediction = md.predict(X)
 
-        return render_template('prediction.html', prediction=y_prediction)
+        result_array = [y_prediction, demand_percentage]
+        
+        return render_template('predict.html', prediction=result_array)
+        
 
 @app.route('/form')
 def form():
     return render_template('form.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, port=80, threaded=True)
