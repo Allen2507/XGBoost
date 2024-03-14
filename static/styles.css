@@ -1,6 +1,6 @@
 header {
-  background-color: #4ca8ff;
-  color: #000;
+  background-color: #1a2238;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
@@ -30,14 +30,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s ease-in-out;
 }
 
 header nav ul li a:hover {
-  color: #ffffff;
+  color: #9daaf2;
 }
 
 main {
@@ -45,7 +45,7 @@ main {
 }
 
 footer {
-  background-color: #8fb8de;
+  background-color: #1a2238;
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -96,7 +96,7 @@ footer ul li a {
   top: 78px;
   position: absolute;
   left: 0;
-  background-color: #cdf7f6;
+  background-color: #ff693b;
   padding-top: 20px;
   padding-left: 10px;
 }
@@ -107,7 +107,7 @@ footer ul li a {
 }
 
 .sidebar h2 {
-  color: #000;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -116,7 +116,7 @@ footer ul li a {
   padding: 10px 15px;
   text-decoration: none;
   font-size: 18px;
-  color: #000;
+  color: #ffffff;
 }
 
 .sidebar a:hover {
@@ -209,4 +209,8 @@ footer ul li a {
 
 .label-head {
   font-weight: bold;
+}
+
+body {
+  overflow: hidden !important;
 }
