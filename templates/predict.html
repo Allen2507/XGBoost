@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Demand Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/static/styles.css" />
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/predict.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-class">
-          <h1>Supply Chain Management Dashboard</h1>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Inventory</a></li>
-              <li><a href="#">Orders</a></li>
-              <li><a href="#">Analytics</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    
-    {% if prediction[0] == 1 %}
-        <p>Product in <span id="predictedValue">{{prediction[2]}}Demand</span> by {{prediction[1]}} %</p>
-    {% else %}
-        <p>Product <span id="predictedValue">Not in Demand</span></p>
-    {% endif %}
-</body>
+      <div class="header-class">
+        <h1>Supply Chain Management Dashboard</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Inventory</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      {% if prediction[0] == 1 %}
+      <p class="main-text">
+        Product in <span id="predictedValue">{{prediction[2]}}Demand</span> by
+        {{prediction[1]}} %
+      </p>
+      {% else %}
+      <p class="main-text">
+        Product <span id="predictedValue">Not in Demand</span>
+      </p>
+      {% endif %}
+    </div>
+  </body>
 </html>

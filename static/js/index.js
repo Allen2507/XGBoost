@@ -54,7 +54,7 @@
         } else if (selectedOption === "0"){
             demandChart.datasets[0].data = actualData0;
             demandChart.datasets[1].data = forecastedData0;
-            document.getElementById("revenue-value-holder").innerText = revenue_value[2]
+            document.getElementById("revenue-value-holder").innerText = revenue_value[2];
         }
 
         demandChart.update();
