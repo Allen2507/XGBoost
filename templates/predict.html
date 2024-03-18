@@ -27,12 +27,12 @@
     <div class="container">
       {% if prediction[0] == 1 %}
       <p class="main-text">
-        Product in <span id="predictedValue">{{prediction[2]}}Demand</span> by
+        Product in <span id="predictedValue" style="color: red;">{{prediction[2]}}Demand</span> by
         {{prediction[1]}} %
       </p>
       {% else %}
       <p class="main-text">
-        Product <span id="predictedValue">Not in Demand</span>
+        Product <span id="predictedValue" style="color: rgb(0, 255, 0);">not in Demand</span>
       </p>
       {% endif %}
     </div>
