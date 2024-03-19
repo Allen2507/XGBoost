@@ -53,9 +53,53 @@ body{
     width: 52%;
     border: 1px solid #444;
     margin: 1rem;
+    margin-left: 250px;
   }
 
   .main-text{
     font-size: 2rem;
     font-weight: 600;
   }
+
+  
+.sidebar {
+  height: 100%;
+  width: 250px;
+  top: 78px;
+  position: absolute;
+  left: 0;
+  background-color: #ff693b;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sidebar a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.sidebar a:hover {
+  background-color: #9ee493;
+}
+.main-page-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem;
+}
